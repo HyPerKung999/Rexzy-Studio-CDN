@@ -801,7 +801,7 @@ button:disabled {
 
 .product:hover .view-label,
 .product:focus .view-label {
-    top: 32%;
+    top: 0%;
     transform: translate(-50%, -50%) scale(1);
 }
 
