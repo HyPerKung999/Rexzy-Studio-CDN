@@ -143,7 +143,7 @@ function cuteToast({ icon, text, timer = 5000 }) {
       <div class="cute-toast-container ${icon}-bg">
         <div>
           <div class="cute-toast-frame">
-            <img class="cute-toast-img" src="assets/img/cute-alert/${icon}.svg" />
+            <img class="cute-toast-img" src="https://raw.githubusercontent.com/HyPerKung999/Rexzy-Studio-CDN/main/model-x/assets/img/cute-alert/${icon}.svg" />
             <span class="cute-toast-message">${text}</span>
             <div class="cute-toast-close">X</div>
           </div>
