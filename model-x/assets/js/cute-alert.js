@@ -59,7 +59,7 @@ function AlertSend({
         <div class="cute-alert-frame">
           <div class="cute-alert-header ${icon}-bg">
             <span class="${closeStyleTemplate}">X</span>
-            <img class="cute-alert-img" src="assets/img/cute-alert/${icon}.svg" />
+            <img class="cute-alert-img" src="https://raw.githubusercontent.com/HyPerKung999/Rexzy-Studio-CDN/main/model-x/assets/img/cute-alert/${icon}.svg" />
           </div>
           <div class="cute-alert-body">
             <span class="cute-alert-title">${title}</span>
