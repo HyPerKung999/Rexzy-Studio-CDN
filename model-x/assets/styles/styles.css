@@ -878,7 +878,7 @@ button:disabled {
 .discount-percent {
     display: inline-block;
     text-decoration: none;
-    background-image: url(https://static.homepro.co.th/assets/images/mkp/discount-pointing.png);
+    background-image: url("https://img5.pic.in.th/file/secure-sv1/discount-pointing.webp");
     background-repeat: no-repeat;
     vertical-align: text-top;
     width: 32px;
