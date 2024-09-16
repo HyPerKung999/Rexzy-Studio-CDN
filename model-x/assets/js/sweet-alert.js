@@ -4,6 +4,8 @@ function AlertSend({
   icon,
   title,
   text,
+  confirmButtonColor,
+  cancelButtonColor,
   confirmButtonText,
   cancelButtonText,
   showCancelButton
@@ -13,8 +15,11 @@ function AlertSend({
     if (icon == null) icon = "info";
     if (title == null) title = "";
     if (text == null) text = "";
-    if (cancelButtonText == null) cancelButtonText = "ยกเลิก";
     if (showCancelButton == null) showCancelButton = false;
+    if (confirmButtonColor == null) confirmButtonColor = "#3085d6";
+    if (cancelButtonColor == null) cancelButtonColor = "#d33";
+    if (confirmButtonText == null) confirmButtonText = "ตกลง";
+    if (cancelButtonText == null) cancelButtonText = "ยกเลิก";
 
     if (icon == "question") {
       Swal.fire({
@@ -22,8 +27,8 @@ function AlertSend({
         title: title,
         html: text,
         showCancelButton: showCancelButton,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
+        confirmButtonColor: confirmButtonColor,
+        cancelButtonColor: cancelButtonColor,
         confirmButtonText: confirmButtonText,
         cancelButtonText: cancelButtonText
       }).then((result) => {
@@ -36,7 +41,7 @@ function AlertSend({
           title: title,
           html: text,
           showCancelButton: showCancelButton,
-          confirmButtonColor: '#3085d6',
+          confirmButtonColor: confirmButtonColor,
           confirmButtonText: confirmButtonText,
         }).then((result) => {
           resolve({ isConfirmed: result.isConfirmed });
