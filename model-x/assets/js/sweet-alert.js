@@ -1,5 +1,3 @@
-// success warning error info question
-
 function AlertSend({
   icon,
   title,
