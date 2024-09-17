@@ -54,7 +54,7 @@ function AlertSend({
   })
 }
 
-function XAlertSend({
+function AlertSend_New({
   icon,
   title,
   text,
@@ -72,7 +72,7 @@ function XAlertSend({
     if (text == null) text = "";
     if (showConfirmButton == null) showConfirmButton = true;
     if (showCancelButton == null) showCancelButton = false;
-    if (confirmButtonColor == null) confirmButtonColor = "#3085d6";
+    if (confirmButtonColor == null) confirmButtonColor = "#78cd31";
     if (cancelButtonColor == null) cancelButtonColor = "#d33";
     if (confirmButtonText == null) confirmButtonText = "ตกลง";
     if (cancelButtonText == null) cancelButtonText = "ยกเลิก";
