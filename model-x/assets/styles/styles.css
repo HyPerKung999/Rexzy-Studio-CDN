@@ -1020,15 +1020,14 @@ button:disabled {
 .status-order-tag-work,
 .status-order-tag-success,
 .status-order-tag-cancel {
-    width: max-content;
-    height: fit-content;
-    padding-left: 1vh;
-    padding-right: 1vh;
-    padding-top: 0.7vh;
-    padding-bottom: 0.7vh;
-    border-radius: 90vh;
-    font-size: 10px;
-    line-height: 0.5vh;
+    display: inline-block;
+    padding: .3em .45em;
+    font-size: 85%;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 1rem;
     font-weight: 500 !important;
 }
 
