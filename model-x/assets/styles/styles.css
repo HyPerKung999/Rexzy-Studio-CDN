@@ -1023,12 +1023,12 @@ button:disabled {
     display: inline-block;
     padding: .3em .45em;
     font-size: 85%;
+    font-weight: 500 !important;
     line-height: 1;
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
     border-radius: 1rem;
-    font-weight: 500 !important;
 }
 
 .status-order-tag-wait {
