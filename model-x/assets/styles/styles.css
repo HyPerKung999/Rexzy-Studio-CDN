@@ -113,11 +113,6 @@ option {
     background-color: var(--color-bg-theme) !important;
 }
 
-hr {
-    border-top: 2px solid var(--color-main);
-    opacity: 1;
-}
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
