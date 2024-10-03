@@ -87,11 +87,16 @@ input::-webkit-calendar-picker-indicator {
     opacity: 0;
 }
 
+hr {
+    border: 0px;
+}
+
 td,
 th {
     font-size: small !important;
     font-weight: bolder !important;
     color: #6c757d !important;
+    font-size: 12px !important;
 }
 
 table.dataTable.table-striped>tbody>tr.odd>* {
@@ -135,6 +140,25 @@ input::placeholder {
 input::-ms-input-placeholder {
     color: var(--color-text-theme) !important;
     opacity: 0.65 !important;
+}
+
+.form-control-color {
+    height: fit-content !important;
+}
+
+.form-control,
+.swal2-select {
+    color: var(--color-text) !important;
+    border: 1px solid var(--color-main) !important;
+    border-radius: 8px;
+}
+
+.form-control:focus,
+.swal2-select:focus {
+    color: var(--color-text) !important;
+    border-color: var(--color-main) !important;
+    outline: 0 !important;
+    box-shadow: 0 0 0 .25rem var(--color-main) !important;
 }
 
 .page-link {
@@ -183,6 +207,32 @@ input::-ms-input-placeholder {
 .modal .modal-content {
     transition: all 0.5s;
     /* animation: shake-modal 1s infinite ease-in-out; */
+}
+
+.offcanvas-backdrop {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(2px) !important;
+}
+
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0) !important;
+    opacity: 1 !important;
+    backdrop-filter: blur(0px) !important;
+    transition: all 0.2s !important;
+}
+
+.modal-backdrop.show {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(2px) !important;
+}
+
+.modal-footer {
+    padding: 0.5rem !important;
+}
+
+.modal-content {
+    border: transparent !important;
+    border-radius: 1.75vh !important;
 }
 
 @keyframes shake-modal {
@@ -1516,4 +1566,48 @@ button:disabled {
 .drag-area.active span,
 .drag-area.active h5 {
     opacity: 0;
+}
+
+
+/* ---------------------------------------------- */
+/* Sweet Alert */
+/* ---------------------------------------------- */
+
+.swal2-popup {
+    border-radius: 1.75vh !important;
+}
+
+.swal2-styled {
+    border-radius: 1.25vh !important;
+    transition: all 0.35s !important;
+}
+
+button.swal2-styled:hover,
+button.swal2-styled:active {
+    transform: scale(0.9) !important;
+}
+
+
+/* ---------------------------------------------- */
+/* Font Awesome */
+/* ---------------------------------------------- */
+
+.fa,
+.fa-brands,
+.fa-classic,
+.fa-duotone,
+.fa-light,
+.fa-regular,
+.fa-sharp,
+.fa-sharp-solid,
+.fa-solid,
+.fa-thin,
+.fab,
+.fad,
+.fal,
+.far,
+.fas,
+.fass,
+.fat {
+    line-height: unset !important;
 }
