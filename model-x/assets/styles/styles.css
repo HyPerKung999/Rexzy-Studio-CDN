@@ -1003,7 +1003,7 @@ button:disabled {
 .product {
     position: relative;
     text-align: center;
-    overflow: hidden;
+    overflow: visible;
     border-radius: 10px;
     border: 1px solid #ccc;
     transition: all 0.3s ease;
@@ -1124,9 +1124,9 @@ button:disabled {
     vertical-align: text-top;
     width: 32px;
     height: 16px;
-    font-size: 12px;
+    font-size: 10.5px;
     color: #fff;
-    padding: 0 7px;
+    padding: 0 4px;
     margin-left: 5px;
     line-height: 16px;
 }
@@ -1160,6 +1160,16 @@ button:disabled {
 /* ---------------------------------------------- */
 /* Best Seller Tag */
 /* ---------------------------------------------- */
+
+.best-seller-tag {
+    position: absolute;
+    top: -15px;
+    right: -20px;
+    width: 50px;
+    height: 50px;
+    transition: all 0.5s ease-in-out;
+}
+
 .best-seller {
     position: absolute;
     top: -55px;
