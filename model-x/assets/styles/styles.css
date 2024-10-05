@@ -433,6 +433,215 @@ html {
     background-color: var(--color-button-opa-15);
 }
 
+.product-carousel {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 1vh;
+    width: calc(100% - 20px);
+    display: inline-block;
+    height: auto;
+}
+
+.product-carousel .all {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.product-carousel .all .slider {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    border-radius: 1vh;
+    position: relative;
+}
+
+.product-carousel .all .slider .owl-nav,
+.product-carousel .all .slider .owl-dots {
+    display: none;
+}
+
+.product-carousel .all .slider:hover .left {
+    visibility: visible;
+    opacity: 1;
+    left: 20px;
+}
+
+.product-carousel .all .slider:hover .right {
+    visibility: visible;
+    opacity: 1;
+    right: 20px;
+}
+
+.product-carousel .all .slider .item-box {
+    padding: 20px;
+    overflow: hidden;
+    width: 385px;
+    height: 385px;
+    position: relative;
+    border-radius: 1vh;
+    background: no-repeat center center;
+    background-size: cover;
+}
+
+.product-carousel .all .slider .item-box:after {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    content: "";
+    display: block;
+}
+
+.product-carousel .all .slider .left {
+    position: absolute;
+    z-index: 1;
+    top: 192px;
+    left: -20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease 0.25s;
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") top left;
+}
+
+.product-carousel .all .slider .left:hover {
+    visibility: visible;
+    opacity: 1;
+    left: 20px;
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") top left;
+}
+
+.product-carousel .all .slider .left.nonl {
+    left: -20px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.product-carousel .all .slider .right {
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    top: 192px;
+    right: -20px;
+    width: 20px;
+    height: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease 0.25s;
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") top left;
+}
+
+.product-carousel .all .slider .right:hover {
+    visibility: visible;
+    opacity: 1;
+    right: 20px;
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") top left;
+}
+
+.product-carousel .all .slider .right.nonr {
+    right: -20px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.product-carousel .all .slider-two {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-carousel .all .slider-two .owl-nav,
+.product-carousel .all .slider-two .owl-dots {
+    display: none;
+}
+
+.product-carousel .all .slider-two:hover .left-t {
+    visibility: visible;
+    opacity: 1;
+    left: 5px;
+}
+
+.product-carousel .all .slider-two:hover .right-t {
+    visibility: visible;
+    opacity: 1;
+    right: 5px;
+}
+
+.product-carousel .all .slider-two .item {
+    transition: all ease 0.25s;
+    height: 70px;
+    width: 70px;
+    border-radius: 1vh;
+    cursor: pointer;
+    background: no-repeat center center;
+    background-size: cover;
+}
+
+.product-carousel .all .slider-two .item.active {
+    border: solid 3px var(--color-main);
+}
+
+.product-carousel .all .slider-two .owl-stage {
+    padding: 10px 0;
+}
+
+.product-carousel .all .slider-two .left-t {
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease 0.25s;
+    width: 25px;
+    height: 95px;
+    background: no-repeat url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") center center;
+    left: -40px;
+}
+
+.product-carousel .all .slider-two .left-t:hover {
+    visibility: visible;
+    opacity: 1;
+    left: 5px;
+}
+
+.product-carousel .all .slider-two .left-t.nonl-t {
+    left: -40px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.product-carousel .all .slider-two .right-t {
+    background: no-repeat url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") center center;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: -40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease 0.25s;
+    width: 25px;
+    height: 95px;
+}
+
+.product-carousel .all .slider-two .right-t:hover {
+    visibility: visible;
+    opacity: 1;
+    right: 5px;
+}
+
+.product-carousel .all .slider-two .right-t.nonr-t {
+    right: -40px;
+    opacity: 0;
+    visibility: hidden;
+}
+
 
 /* ---------------------------------------------- */
 /* Button */
