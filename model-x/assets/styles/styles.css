@@ -1046,6 +1046,14 @@ button:disabled {
     transform: translate(-50%, -50%) scale(1);
 }
 
+.owl-item-product-img {
+    width: auto;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 0.5vh;
+    transition: all 0.2s;
+}
+
 
 /* ---------------------------------------------- */
 /* Category */
@@ -1053,7 +1061,7 @@ button:disabled {
 .product-category {
     position: relative;
     text-align: center;
-    overflow: hidden;
+    overflow: visible;
     border-radius: 10px;
     border: 1px solid #ccc;
     transition: all 0.3s ease;
@@ -1170,13 +1178,13 @@ button:disabled {
 /* ---------------------------------------------- */
 /* Best Seller Tag */
 /* ---------------------------------------------- */
-
 .best-seller-tag {
     position: absolute;
     top: -15px;
     right: -20px;
     width: 50px;
     height: 50px;
+    z-index: 99;
     transition: all 0.5s ease-in-out;
 }
 
@@ -1559,147 +1567,7 @@ button:disabled {
 
 
 /* ---------------------------------------------- */
-/* Level */
-/* ---------------------------------------------- */
-.leaderboard {
-    padding: 10px;
-    border-radius: 15px;
-    border: 1px solid #dee2e6;
-}
-
-.leaderboard-title {
-    color: var(--color-text);
-    font-size: 22px;
-    font-weight: 500 !important;
-}
-
-.leaderboard-items {
-    padding: 5px;
-    margin: 5px 0px;
-    border-radius: 10px;
-    border: 1px solid #dee2e6;
-}
-
-/* ---------------------------------------------- */
-.leaderboard-items[data-no="1"] {
-    background-color: rgb(255, 241, 178) !important;
-    border: 2px solid rgba(255, 225, 90) !important;
-}
-
-.leaderboard-items[data-no="1"] .leaderboard-num {
-    font-size: 20px !important;
-    color: rgb(119, 100, 15) !important;
-}
-
-.leaderboard-items[data-no="1"] .leaderboard-num i {
-    color: rgb(119, 100, 15) !important;
-}
-
-.leaderboard-items[data-no="1"] .leaderboard-value {
-    font-size: 15px !important;
-    color: rgb(119, 100, 15) !important;
-}
-
-.leaderboard-items[data-no="1"] .leaderboard-displayname {
-    font-size: 16px !important;
-    color: rgb(119, 100, 15) !important;
-}
-
-.leaderboard-items[data-no="1"] .leaderboard-name {
-    font-size: 14px !important;
-    color: rgb(119, 100, 15) !important;
-}
-
-/* ---------------------------------------------- */
-
-.leaderboard-items[data-no="2"] {
-    background-color: rgb(223, 223, 223) !important;
-    border: 2px solid rgba(200, 200, 200) !important;
-}
-
-.leaderboard-items[data-no="2"] .leaderboard-num {
-    font-size: 20px !important;
-    color: rgb(105, 105, 105) !important;
-}
-
-.leaderboard-items[data-no="2"] .leaderboard-num i {
-    color: rgb(105, 105, 105) !important;
-}
-
-.leaderboard-items[data-no="2"] .leaderboard-value {
-    font-size: 15px !important;
-    color: rgb(105, 105, 105) !important;
-}
-
-.leaderboard-items[data-no="2"] .leaderboard-displayname {
-    font-size: 16px !important;
-    color: rgb(105, 105, 105) !important;
-}
-
-.leaderboard-items[data-no="2"] .leaderboard-name {
-    font-size: 14px !important;
-    color: rgb(105, 105, 105) !important;
-}
-
-/* ---------------------------------------------- */
-
-.leaderboard-items[data-no="3"] {
-    background-color: rgb(255, 201, 201) !important;
-    border: 2px solid rgba(255, 170, 170) !important;
-}
-
-.leaderboard-items[data-no="3"] .leaderboard-num {
-    font-size: 20px !important;
-    color: rgb(145, 20, 20) !important;
-}
-
-.leaderboard-items[data-no="3"] .leaderboard-num i {
-    color: rgb(145, 20, 20) !important;
-}
-
-.leaderboard-items[data-no="3"] .leaderboard-value {
-    font-size: 15px !important;
-    color: rgb(145, 20, 20) !important;
-}
-
-.leaderboard-items[data-no="3"] .leaderboard-displayname {
-    font-size: 16px !important;
-    color: rgb(145, 20, 20) !important;
-}
-
-.leaderboard-items[data-no="3"] .leaderboard-name {
-    font-size: 14px !important;
-    color: rgb(145, 20, 20) !important;
-}
-
-/* ---------------------------------------------- */
-
-.leaderboard-items:nth-child(even):not([data-no="1"]):not([data-no="2"]):not([data-no="3"]) {
-    background-color: #22222210 !important;
-}
-
-.leaderboard-displayname {
-    font-size: 14px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.leaderboard-name {
-    font-size: 12px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.leaderboard-value {
-    font-size: 14px;
-    width: 100%;
-}
-
-
-/* ---------------------------------------------- */
-/* Level */
+/* Breadcrumb */
 /* ---------------------------------------------- */
 .breadcrumb-custom {
     max-width: 100%;
