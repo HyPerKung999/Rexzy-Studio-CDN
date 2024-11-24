@@ -959,7 +959,7 @@ button:disabled {
 /* Border */
 /* ---------------------------------------------- */
 .border {
-    border: 1px solid #fff;
+    border: 1px solid var(--color-border);
 }
 
 .border-main {
@@ -1005,7 +1005,7 @@ button:disabled {
     text-align: center;
     overflow: visible;
     border-radius: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-border);
     transition: all 0.3s ease;
     transition: all 0.5s;
 }
@@ -1063,7 +1063,7 @@ button:disabled {
     text-align: center;
     overflow: visible;
     border-radius: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-border);
     transition: all 0.3s ease;
     transition: all 0.5s;
 }
@@ -1343,7 +1343,7 @@ button:disabled {
     min-height: 100%;
     padding: 15px;
     border-radius: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-border);
 }
 
 #announce-list .announce-lis-img {
@@ -1486,7 +1486,7 @@ button:disabled {
 .static-count {
     border-radius: 15px;
     color: var(--color-text);
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-border);
     background-color: var(--color-bg-theme);
     transition: all 0.3s;
     overflow: hidden;
