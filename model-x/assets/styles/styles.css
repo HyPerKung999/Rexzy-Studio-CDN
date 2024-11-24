@@ -359,7 +359,7 @@ html {
     color: var(--color-button);
     background-color: var(--color-button-opa-15);
 }
-s
+
 .hover-nav {
     border: 1px solid transparent;
     transition: all 0.3s;
