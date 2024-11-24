@@ -952,7 +952,7 @@ button:disabled {
 }
 
 .icon-white {
-    transition: 0s.5s !important;
+    transition: 0.5s !important;
 }
 
 /* ---------------------------------------------- */
